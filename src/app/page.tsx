@@ -12,7 +12,8 @@ export default function LoyaltyProgram() {
   const [loading, setLoading] = useState(false);
   const { isConnected, address } = useAccount();
 
-  const contractId = "0x662c66962B02Ebd79Fdc204e21065b268A15e920";
+  // const contractId = "0x662c66962B02Ebd79Fdc204e21065b268A15e920"; // Base Sepolia
+  const contractId = "0x6d1479e7FE48fcb9E0B50E2b52c1eA3630A30F4A"; // BFT Testnet
 
   // Read contract hooks
   const { data: pointsData } = useReadContract({
