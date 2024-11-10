@@ -11,7 +11,6 @@ import { defineChain } from "viem";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { WagmiProvider } from "wagmi";
 import { getDefaultConfig } from "@rainbow-me/rainbowkit";
-import { baseSepolia } from "viem/chains";
 
 const { wallets } = getDefaultWallets();
 
@@ -32,9 +31,9 @@ const bitfinityTestnet = defineChain({
 
 /* New RainbowKit API */
 const config = getDefaultConfig({
-  appName: "ContinuPay",
+  appName: "Daily Login",
   projectId: "",
-  chains: [bitfinityTestnet, baseSepolia],
+  chains: [bitfinityTestnet],
   wallets,
 });
 
